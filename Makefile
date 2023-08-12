@@ -8,4 +8,5 @@ brain-games:
 test:
 	npm test
 
-        
+publish:
+    npm publish --dry-run        
