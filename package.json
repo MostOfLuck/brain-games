@@ -2,7 +2,7 @@
   "name": "frontend-project-44",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/MostOfLuck/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MostOfLuck/frontend-project-44/actions)",
-  "main": "index.js"l,
+  "main": "index.js",
   "type": "module",
   "bin": {
     "frontend-project-44": "bin/brain-games.js"
