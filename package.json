@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "frontend-project-44": "bin/brain-games.js"
+    "frontend-project-44": "bin/brain-games.js",
     "brain-games": "bin/brain-games.js"
   },
   "scripts": {
