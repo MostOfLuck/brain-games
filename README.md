@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/MostOfLuck/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d2f223b657ef254075f/maintainability" /></a>
 
-https://asciinema.org/a/hjyGG5ZHqx7lrqv72gUsPLLQM
+Пример игры brain-even: https://asciinema.org/a/hjyGG5ZHqx7lrqv72gUsPLLQM
 
 # Игры разума
 
