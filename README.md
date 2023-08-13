@@ -4,3 +4,37 @@
 <a href="https://codeclimate.com/github/MostOfLuck/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d2f223b657ef254075f/maintainability" /></a>
 
 https://asciinema.org/a/hjyGG5ZHqx7lrqv72gUsPLLQM
+
+# Игры разума
+
+Проект содержит набор консольных игр для тренировки ума.
+
+## Установка
+
+Для установки и запуска игр, выполните следующие шаги:
+
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/ваш-логин/frontend-project-44.git
+
+1. Перейдите в директорию проекта:
+cd frontend-project-44
+
+2. Установите зависимости:
+npm install
+
+Запуск игры "Калькулятор"
+Для запуска игры "Калькулятор", выполните команду:
+npm run brain-calc
+
+Пример:
+https://asciinema.org/a/602402
+
+Как играть
+1. Игра покажет вам математическое выражение.
+2. Введите свой ответ.
+3. Если ваш ответ правильный, игра выведет "Correct!".
+4. Если ваш ответ неправильный, игра выведет правильный ответ и завершится.
+
+Удачи в играх!
