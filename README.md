@@ -19,10 +19,10 @@
 
 
 
-1. Клонируйте репозиторий:
 
-```bash
-git clone https://github.com/ваш-логин/frontend-project-44.git
+
+
+1. Клонируйте репозиторий: git clone https://github.com/ваш-логин/frontend-project-44.git
 
 2. Перейдите в директорию проекта:
 cd frontend-project-44
