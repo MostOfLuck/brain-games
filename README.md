@@ -7,6 +7,8 @@
 
 Пример игры brain-calc: https://asciinema.org/a/602402
 
+Пример игры brain-gcd: https://asciinema.org/a/602539
+
 # Игры разума
 
 Проект содержит набор консольных игр для тренировки ума.
@@ -40,5 +42,6 @@ npm start brain-gcd
 
 Пример:
 https://asciinema.org/a/602402
+https://asciinema.org/a/602539
 
 Удачи в играх!
