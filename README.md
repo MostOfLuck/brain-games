@@ -42,6 +42,8 @@ npm start brain-gcd
 
 Пример:
 https://asciinema.org/a/602402
+
+
 https://asciinema.org/a/602539
 
 Удачи в играх!
