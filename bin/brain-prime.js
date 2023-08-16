@@ -13,50 +13,32 @@ const isPrime = (num) => {
   return true;
 };
 
-const askForName = () => {
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  return playerName;
-};
+console.log('Welcome to the Brain Games!');
+const playerName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${playerName}!`);
+console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-const showPrimeGameIntro = () => {
-  const playerName = askForName();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  return playerName;
-};
+let correctAnswers = 0;
 
-const playBrainPrimeGame = () => {
-  const playerName = showPrimeGameIntro();
+while (correctAnswers < 3) {
+  const number = Math.floor(Math.random() * 100) + 1;
+  console.log(`Question: ${number}`);
+  const userAnswer = readlineSync.question('Your answer: ');
 
-  const gameRound = () => {
-    const number = Math.floor(Math.random() * 100) + 1;
-    const question = number;
-    const correctAnswer = isPrime(number) ? 'yes' : 'no';
-    return { question, correctAnswer };
-  };
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
-  let correctAnswers = 0;
-
-  while (correctAnswers < 3) {
-    const { question, correctAnswer } = gameRound();
-
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-      correctAnswers += 1;
-    } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-      );
-      console.log(`Let's try again, ${playerName}!`);
-      return;
-    }
+  if (userAnswer === correctAnswer) {
+    console.log('Correct!');
+    correctAnswers += 1;
+  } else {
+    console.log(
+      `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
+    );
+    console.log(`Let's try again, ${playerName}!`);
+    break;
   }
+}
 
+if (correctAnswers === 3) {
   console.log(`Congratulations, ${playerName}!`);
-};
-
-playBrainPrimeGame();
+}
