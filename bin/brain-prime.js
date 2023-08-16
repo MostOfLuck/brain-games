@@ -13,19 +13,28 @@ const isPrime = (num) => {
   return true;
 };
 
+const askForName = () => {
+  console.log('Welcome to the Brain Games!');
+  const playerName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playerName}!`);
+  return playerName;
+};
+
+const showPrimeGameIntro = () => {
+  const playerName = askForName();
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  return playerName;
+};
+
 const playBrainPrimeGame = () => {
+  const playerName = showPrimeGameIntro();
+
   const gameRound = () => {
     const number = Math.floor(Math.random() * 100) + 1;
     const question = number;
     const correctAnswer = isPrime(number) ? 'yes' : 'no';
-
     return { question, correctAnswer };
   };
-
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   let correctAnswers = 0;
 
