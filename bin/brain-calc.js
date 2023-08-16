@@ -29,6 +29,7 @@ const playCalcGame = () => {
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log("Let's try again!");
+      return;
     }
   }
 
