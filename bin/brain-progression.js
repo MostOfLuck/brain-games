@@ -16,9 +16,14 @@ const askForName = () => {
   return playerName;
 };
 
-const playProgressionGame = () => {
+const showProgressionGameIntro = () => {
   const playerName = askForName();
   console.log('What number is missing in the progression?');
+  return playerName;
+};
+
+const playProgressionGame = () => {
+  const playerName = showProgressionGameIntro();
 
   let correctAnswers = 0;
 
