@@ -9,6 +9,19 @@ const generateExpression = () => {
   return { num1, num2, operator };
 };
 
+const calculate = (num1, operator, num2) => {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
+};
+
 const askForName = () => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
@@ -25,7 +38,7 @@ const playCalcGame = () => {
   while (correctAnswers < 3) {
     const { num1, num2, operator } = generateExpression();
     const expression = `${num1} ${operator} ${num2}`;
-    const correctAnswer = eval(expression).toString();
+    const correctAnswer = calculate(num1, operator, num2).toString();
 
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
