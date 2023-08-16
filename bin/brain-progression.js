@@ -9,10 +9,15 @@ const generateProgression = (start, step, length) => {
   return progression;
 };
 
-const playProgressionGame = () => {
+const askForName = () => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
+  return playerName;
+};
+
+const playProgressionGame = () => {
+  const playerName = askForName();
   console.log('What number is missing in the progression?');
 
   let correctAnswers = 0;
