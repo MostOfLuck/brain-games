@@ -29,9 +29,14 @@ const askForName = () => {
   return playerName;
 };
 
-const playCalcGame = () => {
+const showCalcGameIntro = () => {
   const playerName = askForName();
   console.log('What is the result of the expression?');
+  return playerName;
+};
+
+const playCalcGame = () => {
+  const playerName = showCalcGameIntro();
 
   let correctAnswers = 0;
 
