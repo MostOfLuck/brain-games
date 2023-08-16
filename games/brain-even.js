@@ -17,6 +17,7 @@ const playEvenGame = () => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (
+      // eslint-disable-next-line operator-linebreak
       (isEven(randomNumber) && userAnswer === 'yes') ||
       (!isEven(randomNumber) && userAnswer === 'no')
     ) {
