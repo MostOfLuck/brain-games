@@ -63,7 +63,9 @@ const playGame = (introMessage, checkAnswerFn) => {
   console.log(`Congratulations, ${playerName}!`);
 };
 
-const checkCalcAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
+function checkCalcAnswer(userAnswer, correctAnswer) {
+  return userAnswer === correctAnswer;
+}
 
 const playCalcGame = () => {
   playGame('What is the result of the expression?', checkCalcAnswer);
