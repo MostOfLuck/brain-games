@@ -29,14 +29,14 @@ const askForName = () => {
   return playerName;
 };
 
-const showCalcGameIntro = () => {
+const showGameIntro = (introMessage) => {
   const playerName = askForName();
-  console.log('What is the result of the expression?');
+  console.log(introMessage);
   return playerName;
 };
 
-const playCalcGame = () => {
-  const playerName = showCalcGameIntro();
+const playGame = (introMessage, checkAnswerFn) => {
+  const playerName = showGameIntro(introMessage);
 
   let correctAnswers = 0;
 
@@ -48,7 +48,7 @@ const playCalcGame = () => {
     console.log(`Question: ${expression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === correctAnswer) {
+    if (checkAnswerFn(userAnswer, correctAnswer)) {
       console.log('Correct!');
       correctAnswers += 1;
     } else {
@@ -61,6 +61,11 @@ const playCalcGame = () => {
   }
 
   console.log(`Congratulations, ${playerName}!`);
+};
+const checkCalcAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
+
+const playCalcGame = () => {
+  playGame('What is the result of the expression?', checkCalcAnswer);
 };
 
 playCalcGame();
