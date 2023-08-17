@@ -14,19 +14,21 @@ const getGCD = (num1, num2) => {
   return a;
 };
 
-const playGCDGame = () => {
+const greetPlayer = () => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
-  console.log('Find the greatest common divisor of given numbers.');
+  return playerName;
+};
+
+const playGame = (questionText, generateQuestion) => {
+  const playerName = greetPlayer();
+  console.log(questionText);
 
   let correctAnswers = 0;
 
   while (correctAnswers < 3) {
-    const number1 = Math.floor(Math.random() * 100) + 1;
-    const number2 = Math.floor(Math.random() * 100) + 1;
-    const question = `${number1} ${number2}`;
-    const correctAnswer = String(getGCD(number1, number2));
+    const { question, correctAnswer } = generateQuestion();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -48,4 +50,14 @@ const playGCDGame = () => {
   }
 };
 
-playGCDGame();
+const generateGCDQuestion = () => {
+  const number1 = Math.floor(Math.random() * 100) + 1;
+  const number2 = Math.floor(Math.random() * 100) + 1;
+  const question = `${number1} ${number2}`;
+  const correctAnswer = String(getGCD(number1, number2));
+
+  return { question, correctAnswer };
+};
+
+const gcdQuestionText = 'Find the greatest common divisor of given numbers.';
+playGame(gcdQuestionText, generateGCDQuestion);
