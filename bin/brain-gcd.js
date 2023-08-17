@@ -17,8 +17,9 @@ const getGCD = (num1, num2) => {
 const playGCDGame = () => {
   console.log('Welcome to the Brain Games!');
   const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log(
+    `Hello, ${playerName}!\nFind the greatest common divisor of given numbers.`,
+  );
 
   let correctAnswers = 0;
 
