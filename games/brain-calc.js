@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import { playGame, checkCalcAnswer } from '../gameUtils.js';
 
 const generateExpression = () => {
   const num1 = Math.floor(Math.random() * 100);
@@ -22,53 +22,15 @@ const calculate = (num1, operator, num2) => {
   }
 };
 
-const askForName = () => {
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  return playerName;
+const generateQuestionAndAnswer = () => {
+  const { num1, num2, operator } = generateExpression();
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = calculate(num1, operator, num2).toString();
+  return { question, correctAnswer };
 };
 
-const showGameIntro = (introMessage) => {
-  const playerName = askForName();
-  console.log(introMessage);
-  return playerName;
-};
-
-const playGame = (introMessage, checkAnswerFn) => {
-  const playerName = showGameIntro(introMessage);
-
-  let correctAnswers = 0;
-
-  while (correctAnswers < 3) {
-    const { num1, num2, operator } = generateExpression();
-    const expression = `${num1} ${operator} ${num2}`;
-    const correctAnswer = calculate(num1, operator, num2).toString();
-
-    console.log(`Question: ${expression}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (checkAnswerFn(userAnswer, correctAnswer)) {
-      console.log('Correct!');
-      correctAnswers += 1;
-    } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-      );
-      console.log(`Let's try again, ${playerName}!`);
-      return;
-    }
-  }
-
-  console.log(`Congratulations, ${playerName}!`);
-};
-
-function checkCalcAnswer(userAnswer, correctAnswer) {
-  return userAnswer === correctAnswer;
-}
-
-const playCalcGame = () => {
-  playGame('What is the result of the expression?', checkCalcAnswer);
-};
-
-playCalcGame();
+playGame(
+  'What is the result of the expression?',
+  generateQuestionAndAnswer,
+  checkCalcAnswer,
+);
