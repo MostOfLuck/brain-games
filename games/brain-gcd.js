@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
+import { playGame, checkCalcAnswer } from '../gameUtils.js';
 
 const getGCD = (num1, num2) => {
   let a = num1;
@@ -14,42 +14,6 @@ const getGCD = (num1, num2) => {
   return a;
 };
 
-const greetPlayer = () => {
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  return playerName;
-};
-
-const playGame = (questionText, generateQuestion) => {
-  const playerName = greetPlayer();
-  console.log(questionText);
-
-  let correctAnswers = 0;
-
-  while (correctAnswers < 3) {
-    const { question, correctAnswer } = generateQuestion();
-
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-      correctAnswers += 1;
-    } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-      );
-      console.log(`Let's try again, ${playerName}!`);
-      break;
-    }
-  }
-
-  if (correctAnswers === 3) {
-    console.log(`Congratulations, ${playerName}!`);
-  }
-};
-
 const generateGCDQuestion = () => {
   const number1 = Math.floor(Math.random() * 100) + 1;
   const number2 = Math.floor(Math.random() * 100) + 1;
@@ -60,4 +24,4 @@ const generateGCDQuestion = () => {
 };
 
 const gcdQuestionText = 'Find the greatest common divisor of given numbers.';
-playGame(gcdQuestionText, generateGCDQuestion);
+playGame(gcdQuestionText, generateGCDQuestion, checkCalcAnswer);
