@@ -16,18 +16,22 @@ const displayResult = (userAnswer, correctAnswer, playerName) => {
   return false;
 };
 
+const playEvenGameRound = (playerName, isEvenFn) => {
+  const generatedNumber = generateRandomNumber();
+  console.log(`Question: ${generatedNumber}`);
+  const userAnswer = getUserAnswer();
+  const correctAnswer = isEvenFn(generatedNumber) ? 'yes' : 'no';
+
+  return displayResult(userAnswer, correctAnswer, playerName);
+};
+
 const playEvenGame = (playerName, isEvenFn) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswers = 0;
 
   while (correctAnswers < 3) {
-    const generatedNumber = generateRandomNumber();
-    console.log(`Question: ${generatedNumber}`);
-    const userAnswer = getUserAnswer();
-    const correctAnswer = isEvenFn(generatedNumber) ? 'yes' : 'no';
-
-    if (displayResult(userAnswer, correctAnswer, playerName)) {
+    if (playEvenGameRound(playerName, isEvenFn)) {
       correctAnswers += 1;
     } else {
       break;
