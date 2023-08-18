@@ -22,11 +22,10 @@ const playEvenGame = (playerName, isEvenFn) => {
   let correctAnswers = 0;
 
   while (correctAnswers < 3) {
-    const randomNumber = generateRandomNumber();
-    console.log(`Question: ${randomNumber}`);
+    const generatedNumber = generateRandomNumber();
+    console.log(`Question: ${generatedNumber}`);
     const userAnswer = getUserAnswer();
-
-    const correctAnswer = isEvenFn(randomNumber) ? 'yes' : 'no';
+    const correctAnswer = isEvenFn(generatedNumber) ? 'yes' : 'no';
 
     if (displayResult(userAnswer, correctAnswer, playerName)) {
       correctAnswers += 1;
