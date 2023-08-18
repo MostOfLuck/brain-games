@@ -1,4 +1,3 @@
-// gameUtils.js
 import readlineSync from 'readline-sync';
 
 export const checkCalcAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
