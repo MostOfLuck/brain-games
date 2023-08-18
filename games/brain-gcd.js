@@ -1,27 +1,6 @@
 #!/usr/bin/env node
 import { playGame, checkCalcAnswer } from '../gameUtils.js';
-
-const getGCD = (num1, num2) => {
-  let a = num1;
-  let b = num2;
-
-  while (b !== 0) {
-    const temp = b;
-    b = a % b;
-    a = temp;
-  }
-
-  return a;
-};
-
-const generateGCDQuestion = () => {
-  const number1 = Math.floor(Math.random() * 100) + 1;
-  const number2 = Math.floor(Math.random() * 100) + 1;
-  const question = `${number1} ${number2}`;
-  const correctAnswer = String(getGCD(number1, number2));
-
-  return { question, correctAnswer };
-};
+import generateGCDQuestion from '../gcdUtils.js';
 
 const gcdQuestionText = 'Find the greatest common divisor of given numbers.';
 playGame(gcdQuestionText, generateGCDQuestion, checkCalcAnswer);
