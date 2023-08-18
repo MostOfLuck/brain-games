@@ -1,13 +1,8 @@
+// gameUtils.js
 import readlineSync from 'readline-sync';
+import greetPlayer from './utils.js';
 
 export const checkCalcAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
-
-export const greetPlayer = () => {
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  return playerName;
-};
 
 export const playGame = (
   introMessage,
