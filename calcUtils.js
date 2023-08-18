@@ -1,3 +1,4 @@
+// calcUtils.js
 const generateExpression = () => {
   const num1 = Math.floor(Math.random() * 100);
   const num2 = Math.floor(Math.random() * 100);
@@ -19,4 +20,11 @@ const calculate = (num1, operator, num2) => {
   }
 };
 
-export { generateExpression, calculate };
+const generateQuestionAndAnswer = () => {
+  const { num1, num2, operator } = generateExpression();
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = calculate(num1, operator, num2).toString();
+  return { question, correctAnswer };
+};
+
+export default generateQuestionAndAnswer;
