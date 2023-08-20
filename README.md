@@ -14,7 +14,6 @@
 
 Brain games - A pack of console math games that are made to improve brain thingking skills. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
 
-## Documentation
 Brain even
 --------------------------  
  You should decide wheather the number is "even" or not.
@@ -35,6 +34,28 @@ $ git clone git@github.com:MostOfLuck/frontend-project-44.git
 $ npm install 
 ```
 
+## Documentation
+executing the games:
+
+```bash
+$ brain-even
+```
+
+```bash
+$ brain-calc
+```
+
+```bash
+$ brain-progression
+```
+
+```bash
+$ brain-gcd
+```
+
+```bash
+$ brain-prime
+```
 
 ## Developers
 
