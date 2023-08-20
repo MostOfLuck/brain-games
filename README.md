@@ -26,6 +26,10 @@ Documentation Here
 Using npm:
 
 ```bash
+$ git clone git@github.com:MostOfLuck/frontend-project-44.git
+```
+
+```bash
 $ npm install 
 ```
 
