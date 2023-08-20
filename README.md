@@ -18,8 +18,11 @@ Brain games - A pack of console math games that are made to improve brain thingk
 Brain even
 --------------------------  
  You should decide wheather the number is "even" or not.
-example: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
+ demonstration: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
 
+Brain calc
+-------------------------- 
+You will need to solve examples. demonstration: <a href="https://asciinema.org/a/602402" target="_blank"><img src="https://asciinema.org/a/602402.svg" /></a>
 ## Installing
 
 Using npm:
