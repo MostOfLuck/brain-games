@@ -15,7 +15,7 @@
 
 ## About
 
-About Text Here
+Brain games - A pack of console math games that are made to improve brain thingking abilities. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
 
 ## Documentation
 
