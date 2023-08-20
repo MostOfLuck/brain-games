@@ -75,3 +75,7 @@ $ brain-prime
 ## Developers
 
 mostofluck https://github.com/MostOfLuck
+
+## Licence
+
+mostofluck
