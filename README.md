@@ -23,7 +23,11 @@ Documentation Here
 
 ## Distribute
 
-- [Service Name](Page Link)
+- To run this project on your machine you should:
+enter the terminal and run: git clone git@github.com:MostOfLuck/frontend-project-44.git
+then, you should run command npm install (sudo if needed)
+the last one, npm link . 
+You are all set!
 
 
 ## Developers
