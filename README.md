@@ -15,8 +15,9 @@
 Brain games - A pack of console math games that are made to improve brain thingking skills. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
 
 ## Documentation
-
-Brain even - You should decide wheather the number is "even" or not.
+Brain even
+--------------------------  
+ You should decide wheather the number is "even" or not.
 example: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
 
 ## Installing
