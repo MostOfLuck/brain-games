@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { playGame, checkCalcAnswer } from '../gameUtils.js';
-import generateQuestionAndAnswer from '../calcUtils.js';
+import { playGame, checkCalcAnswer } from '../src/utils/gameUtils.js';
+import generateQuestionAndAnswer from '../src/utils/calcUtils.js';
 
 playGame(
   'What is the result of the expression?',
