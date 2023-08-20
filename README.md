@@ -32,3 +32,5 @@ $ npm install
 
 
 ## Developers
+
+mostofluck https://github.com/MostOfLuck
