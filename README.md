@@ -45,15 +45,15 @@ Brain-calc:
 ```bash
 $ brain-calc
 ```
-Brain-progression
+Brain-progression:
 ```bash
 $ brain-progression
 ```
-brain-gcd
+brain-gcd:
 ```bash
 $ brain-gcd
 ```
-brain-prime
+brain-prime:
 ```bash
 $ brain-prime
 ```
