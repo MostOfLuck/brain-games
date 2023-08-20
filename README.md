@@ -31,7 +31,7 @@ Brain gcd
 -------------------------- 
 You have to find the greatest common divisor of given numbers. Demonstration:<a href="https://asciinema.org/a/602539" target="_blank"><img src="https://asciinema.org/a/602539.svg" /></a>
 
-Brain gcd
+Brain prime
 -------------------------- 
 You have to decide wheather the given number is prime or not. Demonstration:<a href="https://asciinema.org/a/602580" target="_blank"><img src="https://asciinema.org/a/602580.svg" /></a>
 ## Installing
