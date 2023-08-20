@@ -17,12 +17,16 @@ Brain games - A pack of console math games that are made to improve brain thingk
 Brain even
 --------------------------  
  You should decide wheather the number is "even" or not.
- demonstration: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
+ Demonstration: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
 
 Brain calc
 -------------------------- 
-You will need to solve examples. demonstration: <a href="https://asciinema.org/a/602402" target="_blank"><img src="https://asciinema.org/a/602402.svg" /></a>
+You will need to solve examples. Demonstration: <a href="https://asciinema.org/a/602402" target="_blank"><img src="https://asciinema.org/a/602402.svg" /></a>
 ## Installing
+
+Brain progression
+-------------------------- 
+You have to find the missing number in the progression of numbers. Demonstration:<a href="https://asciinema.org/a/602551" target="_blank"><img src="https://asciinema.org/a/602551.svg" /></a>
 
 Using npm:
 
