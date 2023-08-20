@@ -27,6 +27,9 @@ Brain progression
 -------------------------- 
 You have to find the missing number in the progression of numbers. Demonstration:<a href="https://asciinema.org/a/602551" target="_blank"><img src="https://asciinema.org/a/602551.svg" /></a>
 
+Brain gcd
+-------------------------- 
+You have to find the greatest common divisor of given numbers. Demonstration:<a href="https://asciinema.org/a/602539" target="_blank"><img src="https://asciinema.org/a/602539.svg" /></a>
 
 ## Installing
 
