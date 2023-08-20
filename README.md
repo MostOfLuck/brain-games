@@ -7,9 +7,15 @@
 <p align="center">
    <a href="https://codeclimate.com/github/MostOfLuck/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d2f223b657ef254075f/maintainability" /></a>
 </p>
+<p align="center">
+   <a href="https://github.com/MostOfLuck/frontend-project-44/actions">
+      <img src="https://github.com/MostOfLuck/frontend-project-44/workflows/hexlet-check/badge.svg" />
+   </a>
+</p>
+
 
 ## About
-[![Actions Status](https://github.com/MostOfLuck/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MostOfLuck/frontend-project-44/actions)
+
 Brain games - A pack of console math games that are made to improve brain thingking skills. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
 
 Brain even
