@@ -3,58 +3,31 @@
 
 <a href="https://codeclimate.com/github/MostOfLuck/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d2f223b657ef254075f/maintainability" /></a>
 
-Пример игры brain-even: https://asciinema.org/a/602271
+<p align="center">
+      <img src="Project Logo Url" width="726">
+</p>
 
-Пример игры brain-calc: https://asciinema.org/a/602402
+<p align="center">
+   <img src="" alt="Unity Version">
+   <img src="" alt="Game Version">
+   <img src="" alt="License">
+</p>
 
-Пример игры brain-gcd: https://asciinema.org/a/602539
+## About
 
-Пример игры brain-progression: https://asciinema.org/a/602551
+About Text Here
 
-Пример игры brain-prime: https://asciinema.org/a/602580
+## Documentation
 
-# Игры разума
+Documentation Here
 
-Проект содержит набор консольных игр для тренировки ума.
+## Distribute
 
-## Установка
-
-Для установки и запуска игр, выполните следующие шаги:
-
-
-
-
-
-
+- [Service Name](Page Link)
 
 
-1. Клонируйте репозиторий: git clone https://github.com/ваш-логин/frontend-project-44.git
+## Developers
 
-2. Перейдите в директорию проекта:
-cd frontend-project-44
+- [Delevoper Name](GitHub Profile Link)
 
-3. Установите зависимости:
-npm install
-
-Запуск игры "Проверка на чётность"
-для запуска игры "Проверка на чётность", выполните команду:
-brain-even
-
-Запуск игры "Калькулятор"
-Для запуска игры "Калькулятор", выполните команду:
-brain-calc
-
-Запуск игры "НОД"
-Чтобы запустить игру, выполните команду:
-brain-gcd
-
-Запуск для игры "Арифметическая прогрессия"
-Чтобы запустить игру, выполните команду:
-brain-progression
-
-Запуск игры "Простое ли число?"
-Чтобы запустить игру, выполните команду:
-brain-prime
-
-
-Удачи в играх!
+## License
