@@ -21,13 +21,13 @@ Brain games - A pack of console math games that are made to improve brain thingk
 
 Documentation Here
 
-## Distribute
+## Installing
 
-- To run this project on your machine you should:
-enter the terminal and run: git clone git@github.com:MostOfLuck/frontend-project-44.git
-then, you should run command npm install (sudo if needed)
-the last one, npm link . 
-You are all set!
+Using npm:
+
+```bash
+$ npm install 
+```
 
 
 ## Developers
