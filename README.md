@@ -28,6 +28,6 @@ Documentation Here
 
 ## Developers
 
-- [Delevoper Name](GitHub Profile Link)
+- mostofluck https://github.com/MostOfLuck
 
 ## License
