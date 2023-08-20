@@ -22,11 +22,15 @@ Brain even
 Brain calc
 -------------------------- 
 You will need to solve examples. Demonstration: <a href="https://asciinema.org/a/602402" target="_blank"><img src="https://asciinema.org/a/602402.svg" /></a>
-## Installing
 
 Brain progression
 -------------------------- 
 You have to find the missing number in the progression of numbers. Demonstration:<a href="https://asciinema.org/a/602551" target="_blank"><img src="https://asciinema.org/a/602551.svg" /></a>
+
+
+## Installing
+
+
 
 Using npm:
 
