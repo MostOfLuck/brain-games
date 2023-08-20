@@ -4,7 +4,7 @@
 <a href="https://codeclimate.com/github/MostOfLuck/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/5d2f223b657ef254075f/maintainability" /></a>
 
 <p align="center">
-      <img src="https://i.ibb.co/bKbx6L7/brain-games-logo.png" width="726">
+      <img src="https://i.ibb.co/h742n50/brain-games-png.png" width="726">
 </p>
 
 <p align="center">
