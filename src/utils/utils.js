@@ -1,3 +1,4 @@
+// src/utils/utils.js
 import readlineSync from 'readline-sync';
 
 const greetPlayer = () => {
@@ -6,5 +7,4 @@ const greetPlayer = () => {
   console.log(`Hello, ${playerName}!`);
   return playerName;
 };
-
 export default greetPlayer;

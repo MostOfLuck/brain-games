@@ -1,7 +1,7 @@
 // src/utils/gameUtils.js
 import readlineSync from 'readline-sync';
 
-const playGame = (introMessage, generateQuestionAndAnswer, playerName) => {
+const playGame = (introMessage, generateQuestionAndAnswer) => {
   console.log(introMessage);
 
   let correctAnswers = 0;
@@ -19,12 +19,11 @@ const playGame = (introMessage, generateQuestionAndAnswer, playerName) => {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
-      console.log(`Let's try again, ${playerName}!`);
+      console.log("Let's try again.");
       return;
     }
   }
 
-  console.log(`Congratulations, ${playerName}!`);
+  console.log('Congratulations!');
 };
-
 export default playGame;
