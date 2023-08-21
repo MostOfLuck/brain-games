@@ -6,4 +6,5 @@ const generateQuestionAndAnswer = () => {
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
+
 export default generateQuestionAndAnswer;

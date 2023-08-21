@@ -1,15 +1,7 @@
 // src/utils/gameUtils.js
 import readlineSync from 'readline-sync';
 
-export const greetPlayer = () => {
-  console.log('Welcome to the Brain Games!');
-  const playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-  return playerName;
-};
-
-export const playGame = (introMessage, generateQuestionAndAnswer) => {
-  const playerName = greetPlayer();
+const playGame = (introMessage, generateQuestionAndAnswer, playerName) => {
   console.log(introMessage);
 
   let correctAnswers = 0;
@@ -34,3 +26,5 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
 
   console.log(`Congratulations, ${playerName}!`);
 };
+
+export default playGame;
