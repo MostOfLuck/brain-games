@@ -1,9 +1,6 @@
 #!/usr/bin/env node
-import { playGame, checkCalcAnswer } from '../gameUtils.js';
-import generateQuestionAndAnswer from '../calcUtils.js';
+// src/games/brain-calc.js
+import { playGame } from '../utils/gameUtils.js';
+import generateQuestionAndAnswer from '../utils/calcUtils.js';
 
-playGame(
-  'What is the result of the expression?',
-  generateQuestionAndAnswer,
-  checkCalcAnswer,
-);
+playGame('What is the result of the expression?', generateQuestionAndAnswer);
