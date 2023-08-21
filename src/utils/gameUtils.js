@@ -38,4 +38,5 @@ export const playGame = (
 
   console.log(`Congratulations, ${playerName}!`);
 };
+
 export default playGame;
