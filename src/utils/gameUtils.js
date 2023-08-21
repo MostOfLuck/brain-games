@@ -9,7 +9,11 @@ export const greetPlayer = () => {
   return playerName;
 };
 
-const playGame = (introMessage, generateQuestionAndAnswer, playerName) => {
+export const playGame = (
+  introMessage,
+  generateQuestionAndAnswer,
+  playerName,
+) => {
   console.log(introMessage);
 
   let correctAnswers = 0;
