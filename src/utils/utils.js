@@ -7,4 +7,5 @@ const greetPlayer = () => {
   console.log(`Hello, ${playerName}!`);
   return playerName;
 };
+
 export default greetPlayer;
