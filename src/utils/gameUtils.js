@@ -1,19 +1,15 @@
 // src/utils/gameUtils.js
 import readlineSync from 'readline-sync';
 
+let playerName = null;
+
 export const greetPlayer = () => {
   console.log('Welcome to the Brain Games!');
-  console.log('May I have your name?');
-  const playerName = readlineSync.question();
+  playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
-  return playerName;
 };
 
-export const playGame = (
-  introMessage,
-  generateQuestionAndAnswer,
-  playerName,
-) => {
+export const playGame = (introMessage, generateQuestionAndAnswer) => {
   console.log(introMessage);
 
   let correctAnswers = 0;
@@ -32,9 +28,10 @@ export const playGame = (
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log(`Let's try again, ${playerName}!`);
-      return;
+      process.exit(1);
     }
   }
 
   console.log(`Congratulations, ${playerName}!`);
+  process.exit(0);
 };
