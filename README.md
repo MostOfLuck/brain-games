@@ -15,7 +15,17 @@
 
 ## About
 
-Brain games - A pack of console math games that are made to improve brain thingking skills. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
+Brain Even/Odd: Determine if the given number is even or odd in this fun brain-teasing game.
+
+Brain Calc: Sharpen your arithmetic skills by quickly calculating the result of various mathematical expressions.
+
+Brain GCD: Find the greatest common divisor of pairs of numbers and boost your problem-solving abilities.
+
+Brain Progression: Complete number sequences by figuring out the missing numbers, enhancing your pattern recognition skills.
+
+Brain Prime: Identify prime numbers and develop your understanding of number properties in this challenging game.
+
+These brain games offer engaging challenges to exercise your cognitive abilities and have fun while doing so!
 
 ## Installing
 
