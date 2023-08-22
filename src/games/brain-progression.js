@@ -5,3 +5,5 @@ import { generateQuestionAndAnswer } from '../utils/progressionGameUtils.js';
 const gameQuestionText = 'Your game question text here';
 const playerName = greetPlayer();
 playGame(gameQuestionText, generateQuestionAndAnswer, playerName);
+
+export default playGame;
