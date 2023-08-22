@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import { playGame } from '../utils/gameUtils.js';
-import { generateQuestionAndAnswer, checkProgressionAnswer } from '../utils/progressionGameUtils.js';
+import { playGame, greetPlayer } from '../utils/gameUtils.js';
+import { generateQuestionAndAnswer } from '../utils/progressionGameUtils.js';
 
-const progressionQuestionText = 'What number is missing in the progression?';
-playGame(progressionQuestionText, generateQuestionAndAnswer, checkProgressionAnswer);
+const gameQuestionText = 'Your game question text here';
+const playerName = greetPlayer();
+playGame(gameQuestionText, generateQuestionAndAnswer, playerName);
