@@ -1,7 +1,6 @@
-// src/games/brain-calc.js
-import { playGame } from '../utils/gameUtils.js';
+#!/usr/bin/env node
+import { playGame, greetPlayer } from '../utils/gameUtils.js';
 import generateQuestionAndAnswer from '../utils/calcUtils.js';
-import greetPlayer from '../utils/utils.js';
 
 const playCalcGame = () => {
   const playerName = greetPlayer();
