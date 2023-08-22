@@ -19,6 +19,10 @@ Brain games - A pack of console math games that are made to improve brain thingk
 
 Brain even
 --------------------------  
+ you can start the game like this:
+ ```bash
+$ brain-even
+```
  You should decide wheather the number is "even" or not.
  Demonstration: <a href="https://asciinema.org/a/602271" target="_blank"><img src="https://asciinema.org/a/602271.svg" /></a>
 
