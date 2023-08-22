@@ -19,7 +19,7 @@ Brain games - A pack of console math games that are made to improve brain thingk
 
 Brain even
 --------------------------  
- you can start the game like this:
+ You can start the game like this:
  ```bash
 $ brain-even
 ```
@@ -28,18 +28,34 @@ $ brain-even
 
 Brain calc
 -------------------------- 
+You can start the game like this:
+ ```bash
+$ brain-calc
+```
 You will need to solve examples. Demonstration: <a href="https://asciinema.org/a/602402" target="_blank"><img src="https://asciinema.org/a/602402.svg" /></a>
 
 Brain progression
 -------------------------- 
+You can start the game like this:
+```bash
+$ brain-progression
+```
 You have to find the missing number in the progression of numbers. Demonstration:<a href="https://asciinema.org/a/602551" target="_blank"><img src="https://asciinema.org/a/602551.svg" /></a>
 
 Brain gcd
 -------------------------- 
+You can start the game like this:
+```bash
+$ brain-gcd
+```
 You have to find the greatest common divisor of given numbers. Demonstration:<a href="https://asciinema.org/a/602539" target="_blank"><img src="https://asciinema.org/a/602539.svg" /></a>
 
 Brain prime
 -------------------------- 
+You can start the game like this:
+```bash
+$ brain-prime
+```
 You have to decide wheather the given number is prime or not. Demonstration:<a href="https://asciinema.org/a/602580" target="_blank"><img src="https://asciinema.org/a/602580.svg" /></a>
 ## Installing
 
