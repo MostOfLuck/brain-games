@@ -17,6 +17,21 @@
 
 Brain games - A pack of console math games that are made to improve brain thingking skills. Thoose games were made with JavaScript and fully supported by MacOs and Linux.
 
+## Installing
+
+
+
+Using npm:
+
+```bash
+$ git clone git@github.com:MostOfLuck/frontend-project-44.git
+```
+
+```bash
+$ npm install 
+```
+
+
 Brain even
 --------------------------  
  You can start the game like this:
@@ -57,48 +72,8 @@ You can start the game like this:
 $ brain-prime
 ```
 You have to decide wheather the given number is prime or not. Demonstration:<a href="https://asciinema.org/a/602580" target="_blank"><img src="https://asciinema.org/a/602580.svg" /></a>
-## Installing
-
-
-
-Using npm:
-
-```bash
-$ git clone git@github.com:MostOfLuck/frontend-project-44.git
-```
-
-```bash
-$ npm install 
-```
-
-## Documentation
-executing the games:
-
-Brain even:
-```bash
-$ brain-even
-```
-Brain-calc:
-```bash
-$ brain-calc
-```
-Brain-progression:
-```bash
-$ brain-progression
-```
-brain-gcd:
-```bash
-$ brain-gcd
-```
-brain-prime:
-```bash
-$ brain-prime
-```
 
 ## Developers
 
 mostofluck https://github.com/MostOfLuck
 
-## Licence
-
-mostofluck
