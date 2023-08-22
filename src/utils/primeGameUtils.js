@@ -1,3 +1,5 @@
+// src/utils/primeGameUtils.js
+
 import isPrime from './primeUtils.js';
 
 const generateQuestionAndAnswer = () => {
