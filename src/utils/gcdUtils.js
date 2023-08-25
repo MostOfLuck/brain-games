@@ -1,3 +1,6 @@
+// src/utils/gcdUtils.js
+import { generateRandomNumber } from './utils.js';
+
 const getGCD = (num1, num2) => {
   let a = num1;
   let b = num2;
@@ -12,12 +15,12 @@ const getGCD = (num1, num2) => {
 };
 
 const generateGCDQuestion = () => {
-  const number1 = Math.floor(Math.random() * 100) + 1;
-  const number2 = Math.floor(Math.random() * 100) + 1;
+  const number1 = generateRandomNumber(1, 100);
+  const number2 = generateRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
   const correctAnswer = String(getGCD(number1, number2));
 
   return { question, correctAnswer };
 };
 
-export default generateGCDQuestion;
+export { getGCD, generateGCDQuestion };
