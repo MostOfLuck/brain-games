@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 // src/games/brain-gcd.js
 import { playGame, greetPlayer } from '../utils/gameUtils.js';
 import { generateRandomNumber } from '../utils/utils.js';
