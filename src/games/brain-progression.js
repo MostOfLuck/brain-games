@@ -1,4 +1,4 @@
-// c#!/usr/bin/env node
+#!/usr/bin/env node
 import { playGame, greetPlayer } from '../utils/gameUtils.js';
 
 const generateProgression = (start, step, length) => {
@@ -9,22 +9,25 @@ const generateProgression = (start, step, length) => {
   return progression;
 };
 
-export const generateQuestionAndAnswer = () => {
-  const start = Math.floor(Math.random() * 50) + 1;
-  const step = Math.floor(Math.random() * 10) + 1;
-  const progressionLength = 10;
-  const hiddenIndex = Math.floor(Math.random() * progressionLength);
+const playProgressionGame = () => {
+  greetPlayer();
+  const gameQuestionText = 'What number is missing in the progression?';
 
-  const progression = generateProgression(start, step, progressionLength);
-  const correctAnswer = String(progression[hiddenIndex]);
-  progression[hiddenIndex] = '..';
-  const question = progression.join(' ');
+  const generateQuestionAndAnswer = () => {
+    const start = Math.floor(Math.random() * 50) + 1;
+    const step = Math.floor(Math.random() * 10) + 1;
+    const progressionLength = 10;
+    const hiddenIndex = Math.floor(Math.random() * progressionLength);
 
-  return { question, correctAnswer };
+    const progression = generateProgression(start, step, progressionLength);
+    const correctAnswer = String(progression[hiddenIndex]);
+    progression[hiddenIndex] = '..';
+    const question = progression.join(' ');
+
+    return { question, correctAnswer };
+  };
+
+  playGame(gameQuestionText, generateQuestionAndAnswer);
 };
 
-const gameQuestionText = 'What number is missing in the progression?';
-const playerName = greetPlayer();
-playGame(gameQuestionText, generateQuestionAndAnswer, playerName);
-
-export default playGame;
+export default playProgressionGame;
