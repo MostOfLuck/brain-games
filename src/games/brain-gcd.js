@@ -1,6 +1,5 @@
 // src/games/brain-gcd.js
-import { playGame, greetPlayer } from '../utils/gameUtils.js';
-import { generateRandomNumber } from '../utils/utils.js';
+import { playGame, greetPlayer, generateRandomNumber } from '../utils/gameUtils.js';
 
 const getGCD = (num1, num2) => {
   let a = num1;
