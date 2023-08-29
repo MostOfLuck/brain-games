@@ -8,6 +8,8 @@ const greetPlayer = () => {
   return playerName;
 };
 
+export const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
 const runGame = (gameFunction) => {
   const playerName = greetPlayer();
   gameFunction(playerName);
