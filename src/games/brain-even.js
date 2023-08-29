@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 // src/games/brain-even.js
-import { playGame, greetPlayer } from '../utils/gameUtils.js';
-import { generateRandomNumber } from '../utils/utils.js';
+import { playGame, greetPlayer, generateRandomNumber } from '../utils/gameUtils.js';
 
 const isEven = (number) => number % 2 === 0;
 
