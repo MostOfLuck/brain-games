@@ -22,17 +22,18 @@ const calculate = (num1, operator, num2) => {
   }
 };
 
-const generateQuestionAndAnswer = () => {
-  const { num1, num2, operator } = generateExpression();
-  const question = `${num1} ${operator} ${num2}`;
-  const correctAnswer = calculate(num1, operator, num2).toString();
-  return { question, correctAnswer };
-};
-
 const playCalcGame = () => {
-  const playerName = greetPlayer();
+  greetPlayer();
   const introMessage = 'What is the result of the expression?';
-  playGame(introMessage, generateQuestionAndAnswer, playerName);
+
+  const generateQuestionAndAnswer = () => {
+    const { num1, num2, operator } = generateExpression();
+    const question = `${num1} ${operator} ${num2}`;
+    const correctAnswer = calculate(num1, operator, num2).toString();
+    return { question, correctAnswer };
+  };
+
+  playGame(introMessage, generateQuestionAndAnswer);
 };
 
 export default playCalcGame;
