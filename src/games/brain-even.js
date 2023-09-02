@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../utils/gameUtils.js';
-import { generateRandomNumber } from '../index.js';
+import { generateRandomNumber, playGame, greetPlayer } from '../index.js';
 
 const isEven = (number) => number % 2 === 0;
 
