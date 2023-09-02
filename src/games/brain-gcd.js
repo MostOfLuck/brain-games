@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../utils/gameUtils.js';
-import { generateRandomNumber } from '../index.js';
+import { generateRandomNumber, playGame, greetPlayer } from '../index.js';
 
 const getGCD = (num1, num2) => {
   let a = num1;
