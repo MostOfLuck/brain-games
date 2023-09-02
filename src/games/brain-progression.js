@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../utils/gameUtils.js';
+import { playGame, greetPlayer } from '../index.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
