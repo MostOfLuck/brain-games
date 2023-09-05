@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
+const greetPlayer = () => {
+  console.log('Welcome to the Brain Games!');
+  const playerName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${playerName}!`);
+  return playerName;
+};
+
+const displayQuestion = (question) => readlineSync.question(`Question: ${question}\nYour answer: `);
+
+const displayResult = (isCorrect, correctAnswer, playerName) => {
+  console.log(isCorrect ? 'Correct!' : `'${correctAnswer}' is the correct answer.\nLet's try again, ${playerName}!`);
+  if (!isCorrect) process.exit(1);
+};
+
 export const playGame = (introMessage, generateQuestionAndAnswer) => {
-  const greetPlayer = () => {
-    console.log('Welcome to the Brain Games!');
-    const playerName = readlineSync.question('May I have your name? ');
-    console.log(`Hello, ${playerName}!`);
-    return playerName;
-  };
-
-  const displayQuestion = (question) => readlineSync.question(`Question: ${question}\nYour answer: `);
-
-  const displayResult = (isCorrect, correctAnswer, playerName) => {
-    console.log(isCorrect ? 'Correct!' : `'${correctAnswer}' is the correct answer.\nLet's try again, ${playerName}!`);
-    if (!isCorrect) process.exit(1);
-  };
-
   const playerName = greetPlayer();
   console.log(introMessage);
 
@@ -34,4 +34,5 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
   console.log(`Congratulations, ${playerName}!`);
   process.exit(0);
 };
+
 export default playGame;
