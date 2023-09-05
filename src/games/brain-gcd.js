@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { generateRandomNumber, playGame, greetPlayer } from '../index.js';
+import { generateRandomNumber, playGame } from '../index.js';
 
 const getGCD = (num1, num2) => {
   let a = num1;
@@ -15,7 +15,6 @@ const getGCD = (num1, num2) => {
 };
 
 const playGcdGame = () => {
-  greetPlayer();
   const gcdQuestionText = 'Find the greatest common divisor of given numbers.';
 
   const generateGCDQuestion = () => {

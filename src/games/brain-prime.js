@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../index.js';
+import { playGame } from '../index.js';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -14,7 +14,6 @@ const isPrime = (num) => {
 };
 
 const playPrimeGame = () => {
-  greetPlayer();
   const primeQuestionText = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const generateQuestionAndAnswer = () => {

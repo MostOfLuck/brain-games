@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../index.js';
+import { playGame } from '../index.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
@@ -10,7 +10,6 @@ const generateProgression = (start, step, length) => {
 };
 
 const playProgressionGame = () => {
-  greetPlayer();
   const gameQuestionText = 'What number is missing in the progression?';
 
   const generateQuestionAndAnswer = () => {

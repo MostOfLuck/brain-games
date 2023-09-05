@@ -3,20 +3,16 @@ import readlineSync from 'readline-sync';
 
 export const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-let playerName = null;
-
-export const greetPlayer = () => {
-  console.log('Welcome to the Brain Games!');
-  playerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerName}!`);
-};
-
-const runGame = (gameFunction) => {
-  greetPlayer();
-  gameFunction(playerName);
-};
-
 export const playGame = (introMessage, generateQuestionAndAnswer) => {
+  let playerName = null;
+
+  const greetPlayer = () => {
+    console.log('Welcome to the Brain Games!');
+    playerName = readlineSync.question('May I have your name? ');
+    console.log(`Hello, ${playerName}!`);
+  };
+
+  greetPlayer();
   console.log(introMessage);
 
   let correctAnswers = 0;
@@ -51,4 +47,4 @@ const runCli = () => {
 };
 
 export { runCli };
-export default runGame;
+export default playGame;

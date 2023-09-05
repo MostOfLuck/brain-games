@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { playGame, greetPlayer } from '../index.js';
+import { playGame } from '../index.js';
 
 const generateExpression = () => {
   const num1 = Math.floor(Math.random() * 100);
@@ -23,7 +23,6 @@ const calculate = (num1, operator, num2) => {
 };
 
 const playCalcGame = () => {
-  greetPlayer();
   const introMessage = 'What is the result of the expression?';
 
   const generateQuestionAndAnswer = () => {
@@ -37,3 +36,5 @@ const playCalcGame = () => {
 };
 
 export default playCalcGame;
+
+playCalcGame();
