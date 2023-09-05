@@ -12,12 +12,8 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
   const displayQuestion = (question) => readlineSync.question(`Question: ${question}\nYour answer: `);
 
   const displayResult = (isCorrect, correctAnswer, playerName) => {
-    if (!isCorrect) {
-      console.log(`'${correctAnswer}' is the correct answer.`);
-      console.log(`Let's try again, ${playerName}!`);
-      process.exit(1);
-    }
-    console.log('Correct!');
+    console.log(isCorrect ? 'Correct!' : `'${correctAnswer}' is the correct answer.\nLet's try again, ${playerName}!`);
+    if (!isCorrect) process.exit(1);
   };
 
   const playerName = greetPlayer();
