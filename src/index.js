@@ -31,6 +31,7 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log(`Let's try again, ${playerName}!`);
+      process.exit(0);
     }
   }
 
