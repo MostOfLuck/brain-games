@@ -9,6 +9,7 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
   };
 
   const displayQuestion = (question) => readlineSync.question(`Question: ${question}\nYour answer: `);
+
   const displayResult = (isCorrect, correctAnswer, playerName) => {
     if (isCorrect) {
       console.log('Correct!');
@@ -19,22 +20,24 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
     }
   };
 
-  const playerName = greetPlayer();
+  const getPlayerName = greetPlayer();
   console.log(introMessage);
 
   let correctAnswers = 0;
+
+  const checkAnswer = (userAnswer, correctAnswer) => userAnswer === correctAnswer;
 
   while (correctAnswers < 3) {
     const { question, correctAnswer } = generateQuestionAndAnswer();
     const userAnswer = displayQuestion(question);
 
-    const isCorrect = userAnswer === correctAnswer;
-    displayResult(isCorrect, correctAnswer, playerName);
+    const isCorrect = checkAnswer(userAnswer, correctAnswer);
+    displayResult(isCorrect, correctAnswer, getPlayerName);
 
     correctAnswers += isCorrect ? 1 : 0;
   }
 
-  console.log(`Congratulations, ${playerName}!`);
+  console.log(`Congratulations, ${getPlayerName}!`);
   process.exit(0);
 };
 
