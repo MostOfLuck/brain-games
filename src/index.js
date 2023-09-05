@@ -38,13 +38,4 @@ export const playGame = (introMessage, generateQuestionAndAnswer) => {
   console.log(`Congratulations, ${playerName}!`);
   process.exit(0);
 };
-
-const runCli = () => {
-  console.log('Welcome to the Brain Games!');
-
-  const playerNameCli = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${playerNameCli}!`);
-};
-
-export { runCli };
 export default playGame;
