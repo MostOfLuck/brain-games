@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { runCli } from '../src/index.js';
+import playBrainGames from '../src/games/brain-games.js';
 
-runCli();
+playBrainGames();
