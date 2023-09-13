@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { playGame } from '../index.js';
+import generateRandomNumber from '../utils/generateRandomNumber.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
@@ -13,8 +14,8 @@ const playProgressionGame = () => {
   const gameQuestionText = 'What number is missing in the progression?';
 
   const generateQuestionAndAnswer = () => {
-    const start = Math.floor(Math.random() * 50) + 1;
-    const step = Math.floor(Math.random() * 10) + 1;
+    const start = generateRandomNumber(1, 50);
+    const step = generateRandomNumber(1, 10);
     const progressionLength = 10;
     const hiddenIndex = Math.floor(Math.random() * progressionLength);
 
