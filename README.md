@@ -75,5 +75,6 @@ You have to decide wheather the given number is prime or not. Demonstration:<a h
 
 ## Developers
 
-MostOfLuck https://github.com/MostOfLuck
+[MostOfLuck](https://github.com/MostOfLuck)
+
 
