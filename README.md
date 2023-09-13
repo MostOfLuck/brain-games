@@ -15,7 +15,7 @@
 
 ## About
 
-These brain games offer engaging challenges to exercise your cognitive abilities and have fun while doing so!
+These brain games offer engaging challenges to exercise your cognitive abilities and have fun while doing so 😁
 
 ## Installing
 
@@ -75,6 +75,6 @@ You have to decide wheather the given number is prime or not. Demonstration:<a h
 
 ## Developers
 
-[MostOfLuck](https://github.com/MostOfLuck) U+1F4AA
+[MostOfLuck](https://github.com/MostOfLuck) 💪
 
 
